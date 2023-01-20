@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --blue-color: rgb(15, 15, 185);
+    --green-color: rgb(15, 184, 15);
+    --hover-color: rgb(13, 98, 13);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap : 1.7rem;
+}
+.container .logo {
+    background-color: var(--green-color);
+    width: 100%;
+    color : white;
+    text-align: center;
+    padding: 10px;
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+        justify-content: center;
+}
+
+
+.container .logo h2 {
+    color: white;
+    margin-top: 10px;
+}
+
+.container .logo img {
+    margin-top: 3px;
+    height: 40px;
+    width: 40px;
+}
+
+.register-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap : 10px;
+}
+
+.register-section .register-section-left {
+    padding : 10px;
+    display : flex;
+    flex-direction: column;
+    gap : 2rem;
+}
+
+.register-section .register-section-left form {
+    display: flex;
+    flex-direction: column;
+    gap : 16px;  
+}
+.register-section .register-section-left form .form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.register-section .register-section-left form .form-content input {
+    width : 70%;
+    padding : 10px 15px;
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+.register-section .register-section-left form .form-content-checkbox {
+    display: inline-flex;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.register-section .register-section-left form .form-content label {
+    font-weight: 500;
+    font-size: 14;
+}
+
+.register-section .register-section-left form a {
+    color : var(--green-color);
+}
+
+.register-section .register-section-left form .form-content button{
+    margin-top : 20px;
+    background-color: var(--green-color);
+        color: white;
+        border: 1px solid;
+        border-radius: 10px;
+        padding: 10px 20px;
+        width: 30%;
+        font-weight: bold;
+        font-size: 16px;
+        text-align: center;
+}
+
+.register-section .register-section-left form .form-content-radio {
+    display: flex;
+    flex-direction: column;
+    gap : 10px;
+    font-weight: 500;
+}
+
+.register-section .register-section-left .guest{
+        margin-top: 20px;
+            background-color: var(--green-color);
+            color: white;
+            border: 1px solid;
+            border-radius: 10px;
+            padding: 10px 20px;
+            width: 30%;
+            font-weight: bold;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+}
+
+.register-section .register-section-right img {
+    height : 500px;
+    width : 500px;
+}
+
+.register-section .register-section-left form .form-content button:hover{
+    background-color : gray;
+    cursor: pointer;
+}
+
+.register-section .register-section-left form .error{
+    color : rgb(197, 9,9);
+}
+
+@media(max-width : 768px){
+    .register-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap : 15px;
+    }
+        .register-section .register-section-left form .form-content input {
+            width: 100%;
+        }
+
+                .register-section .register-section-left form .form-content button {
+                    width: 50%;
+                    padding : 7px 15px;
+                }
+                .register-section .register-section-right img {
+                    height: 300px;
+                    width: 300px;
+                }
+}

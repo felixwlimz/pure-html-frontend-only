@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/register-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <title>Register</title>
+    <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
+        integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="container">
+            <div class="logo">
+            <img src="../assets/beliskuy.jpeg">
+            <h2>BeliSkuy</h2>
+            </div>
+        <section class="register-section">
+       
+            <div class="register-section-left">
+                <h1>Sign Up </h1>
+                 <form action="/html/gallery.html" class="sign-up-form" id="sign-up">
+                    <div class="form-content">
+                        <label for="username">Enter your Username:</label>
+                        <input type="text" id="username" name="username" placeholder="johndoe" required>
+                    </div>
+                    <div class="form-content">
+                        <label for="email">Enter your Email:</label>
+                        <input type="email" id="email" name="email" placeholder="johndoe@example.com" required>
+                    </div>
+                    <div class="form-content">
+                        <label for="password">Enter your Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-content">
+                        <label for="password">Confirm Password:</label>
+                        <input type="password" id="confirm-password" name="confirmPassword" required>
+                    </div>
+                    <div class="form-content-radio">
+                        <label for="radio">Select your Gender:</label>
+                        <span>
+                            <input type="radio" id="male" value='Male' name="gender" required>
+                            <label for="male">Male</label>
+                        </span>
+                        <span>
+                            <input type="radio" id="female" vale="Female" name="gender" required>
+                            <label for="female">Female</label>
+                        </span>
+                    </div>
+                    <span>Have an Account? <a href="login.html">Sign In</a></span>
+                    <div class="form-content-checkbox">
+                        <input type="checkbox" id="checkbox" name="checkbox" required>
+                        <label for="checkbox">I Agree with Terms and Conditions</label>
+                    </div>
+                    <div class="form-content">
+                        <button type="submit"> Register </button>
+                       
+                    </div>            
+                 </form>
+                <a href='/html/gallery.html' class="guest"> Continue as Guest</a>
+            </div>
+
+            <div class="register-section-right">
+               <img src="https://img.freepik.com/free-vector/shop-with-we-are-open-sign_23-2148557016.jpg?w=2000" alt="">
+            </div>
+        </section>
+        
+    </div>
+
+    <script src="../js/register_validator.js"></script>
+</body>
+</html>
